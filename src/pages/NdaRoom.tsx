@@ -2,9 +2,9 @@ import { useState, useEffect, useRef, type JSX } from 'react';
 import { 
   Clock, Music, Play, Pause, Volume2, VolumeX, Plus, Check, Trash2, 
   Calendar, Timer, Coffee, Moon, Sun, BookOpen, Settings, Code, Save,
-  AlertTriangle, MessageSquare, PanelRight, X, Maximize, Minimize,
-  ChevronLeft, ChevronRight, Search, Filter, Server,
-  Briefcase, Laptop, Bookmark, TrendingUp, CheckCircle, FilePlus
+  AlertTriangle, MessageSquare, X, Maximize, Minimize,
+  ChevronLeft, ChevronRight, Search, Server,
+   Laptop, Bookmark, TrendingUp, CheckCircle,
 } from 'lucide-react';
 
 // Interfaces e tipos
@@ -54,7 +54,7 @@ export default function NDARoom(): JSX.Element {
   const [newTaskCategory, setNewTaskCategory] = useState<string>('');
   const [taskFilter, setTaskFilter] = useState<TaskFilter>('all');
   const [taskSearchQuery, setTaskSearchQuery] = useState<string>('');
-  const [taskCategories, setTaskCategories] = useState<string[]>(['frontend', 'backend', 'estudos', 'docs', 'design', 'devops']);
+  const [taskCategories] = useState<string[]>(['frontend', 'backend', 'estudos', 'docs', 'design', 'devops']);
   const [taskDueDate, setTaskDueDate] = useState<string>('');
 
   // Estados para música
